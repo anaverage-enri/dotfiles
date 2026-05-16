@@ -1,0 +1,33 @@
+add_newline = true
+command_timeout = 800
+
+# Disable modules that are not necessary — each one disabled is a free perf win
+[aws]
+disabled = true      # Enable if you switch AWS profiles frequently
+
+[gcloud]
+disabled = true
+
+[package]
+disabled = true      # npm package version in prompt is rarely useful
+
+[nodejs]
+disabled = true
+format = "via [$symbol($version )]($style)"
+symbol = " "        # Requires a Nerd Font
+
+[docker_context]
+disabled = true      # disable for now
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true   # Truncates to repo root, which is usually what you want
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[git_branch]
+format = "on [$symbol$branch(:$remote_branch)]($style) " 
