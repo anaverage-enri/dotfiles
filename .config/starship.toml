@@ -1,6 +1,15 @@
 add_newline = true
 command_timeout = 800
 
+right_format = """
+$time"""
+
+# Enable additional modules
+[time]
+disabled = false 
+format = "[$time ]($style)"
+style = "dimmed"
+
 # Disable modules that are not necessary — each one disabled is a free perf win
 [aws]
 disabled = true      # Enable if you switch AWS profiles frequently
