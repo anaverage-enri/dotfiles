@@ -40,6 +40,8 @@ alias ls='eza --color=always --icons=always --long --git --no-filesize --no-time
 alias stockroom='cd ~/RAKSUL/raksul-stockroom'
 alias stockroom-web='cd ~/RAKSUL/raksul-stockroom-web'
 
+# Dotfiles managed as a BARE git repo at ~/.dotfiles with $HOME as the work tree.
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # === Completion System ===
 
 # Loads zsh's completion engine. Must run BEFORE plugins that hook into it (fzf, etc.).
