@@ -34,6 +34,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 # === Aliases ===
 
 alias cat='bat --paging=never --style=plain'
+alias ls='eza --color=always --icons=always --long --git --no-filesize --no-time --no-user --no-permissions --tree --level=1'
 
 
 # === Completion System ===
