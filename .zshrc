@@ -33,6 +33,8 @@ DISABLE_MAGIC_FUNCTIONS=true
 
 # === Aliases ===
 
+alias cat='bat --paging=never --style=plain'
+
 
 # === Completion System ===
 
