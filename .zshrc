@@ -31,6 +31,9 @@ setopt INTERACTIVE_COMMENTS            # allow `# comments` mid-line in the inte
 DISABLE_MAGIC_FUNCTIONS=true
 
 
+# === Aliases ===
+
+
 # === Completion System ===
 
 # Loads zsh's completion engine. Must run BEFORE plugins that hook into it (fzf, etc.).
