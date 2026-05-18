@@ -71,6 +71,10 @@ zstyle ':completion:*' menu select                       # arrow-key navigable c
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'   # case-insensitive matching (typing 'doc' matches 'Documents')
 
 
+# === bat ===
+export BAT_THEME=Coldark-Dark
+
+
 # === Keybindings ===
 # After fzf so our bindings override any conflicting ones it sets up.
 
