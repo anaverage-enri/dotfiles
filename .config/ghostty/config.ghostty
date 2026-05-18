@@ -1,6 +1,15 @@
 window-save-state = always
 quit-after-last-window-closed = true
 
+# Appearance
+theme = Monokai Pro Spectrum
+font-family = JetBrainsMono Nerd Font
+font-size = 16
+font-thicken = true
+cursor-style = bar
+adjust-cell-height = 20%
+window-colorspace = "display-p3"
+macos-titlebar-style = transparent
 
 # Window Customization
 window-padding-x = 10
@@ -14,3 +23,6 @@ copy-on-select = true
 scrollback-limit = 50000
 mouse-scroll-multiplier = 2
 mouse-hide-while-typing = true
+
+# Keybindings (Example: Command + T for new tab)
+# keybind = cmd+t=new_tab
