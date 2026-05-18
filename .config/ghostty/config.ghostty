@@ -1,2 +1,10 @@
 window-save-state = always
 quit-after-last-window-closed = true
+
+
+# Window Customization
+window-padding-x = 10
+window-padding-y = 10
+background-opacity = 0.85
+background-blur = 25
+window-decoration = true
