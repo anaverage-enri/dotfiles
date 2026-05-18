@@ -88,7 +88,6 @@ bindkey '^[[Z' reverse-menu-complete   # Shift+Tab cycles BACKWARD through compl
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=244"        # grey color for the suggestion ghost text
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)   # try history first, fall back to completion engine
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20              # skip lookup once command exceeds 20 chars (perf)
-# Note: ZSH_AUTOSUGGEST_USE_ASYNC is NO LONGER needed — async is the default in modern versions.
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
