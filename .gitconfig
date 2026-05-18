@@ -6,3 +6,9 @@
 [user]
 	email = anaverage.enri@gmail.com
 	name = anaverage-enri
+
+[init]
+    defaultBranch = main
+
+[fetch]
+    prune = true
