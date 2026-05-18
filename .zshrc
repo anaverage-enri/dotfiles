@@ -35,6 +35,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 
 alias cat='bat --paging=never --style=plain'
 alias ls='eza --color=always --icons=always --long --git --no-filesize --no-time --no-user --no-permissions --tree --level=1'
+alias lzg='lazygit'
 
 # Project shortcuts
 alias stockroom='cd ~/RAKSUL/raksul-stockroom'
