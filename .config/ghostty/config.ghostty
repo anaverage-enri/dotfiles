@@ -8,3 +8,9 @@ window-padding-y = 10
 background-opacity = 0.85
 background-blur = 25
 window-decoration = true
+
+# Interaction
+copy-on-select = true
+scrollback-limit = 50000
+mouse-scroll-multiplier = 2
+mouse-hide-while-typing = true
