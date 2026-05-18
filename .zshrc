@@ -75,6 +75,15 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'   # case-insensitive matc
 export BAT_THEME=Coldark-Dark
 
 
+# === fzf ===
+# Placement note: must come AFTER compinit (it hooks into completion) and
+# BEFORE custom keybindings (so ours win if there's a conflict).
+
+export COLORTERM=truecolor                              # signals 24-bit color support for previews
+
+# Sets up Ctrl-T (file picker), Ctrl-R (history), Alt-C (cd picker), and tab completion.
+source <(fzf --zsh)
+
 # === Keybindings ===
 # After fzf so our bindings override any conflicting ones it sets up.
 
