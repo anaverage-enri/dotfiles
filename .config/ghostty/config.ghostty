@@ -1,0 +1,2 @@
+window-save-state = always
+quit-after-last-window-closed = true
