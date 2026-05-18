@@ -32,3 +32,12 @@ dotfiles config --local status.showUntrackedFiles no
 
 That `awk`/`xargs` dance parses Git's error output to find exactly the conflicting files, moves them to `~/.dotfiles-backup/` preserving subdirectory structure, and retries the checkout.
 It's ugly but it's recommended from Atlassian and it works.
+
+---
+## Notes
+
+Inside Ghostty default configuration file, make sure to add
+```bash
+config-file = ~/.config/ghostty/config.ghostty
+```
+To point Ghostty to use the managed configuration file.
