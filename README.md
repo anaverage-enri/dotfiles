@@ -1,4 +1,7 @@
-## Bootstrapping A Brand New Machine
+## Bootstrapping A Brand New Machine With Conflict Handling
+
+A fresh machine already has `~/.zshrc` (possibly empty, possibly with some boilerplate), `~/.zprofile`, maybe `~/.gitconfig`. If you `git checkout` over the top, Git refuses with "the following untracked working tree files would be overwritten."
+The canonical fix is to clone into a scratch directory, move the metadata into place, then use `checkout` with a backup step for conflicting files:
 
 ```bash
 # On the new Mac, after installing Homebrew + git (see bootstrap script)
@@ -25,3 +28,5 @@ fi
 # Make sure Git bare repo doesn't track all files from $HOME
 dotfiles config --local status.showUntrackedFiles no
 ```
+
+That `awk`/`xargs` dance parses Git's error output to find exactly the conflicting files, moves them to `~/.dotfiles-backup/` preserving subdirectory structure, and retries the checkout. It's ugly but it's recommended from Atlassian and it works.
