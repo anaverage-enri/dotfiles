@@ -46,6 +46,7 @@ export DOTFILES_DIR="$HOME/.dotfiles"
 
 alias dotfiles='/usr/bin/git --git-dir=$DOTFILES_DIR --work-tree=$HOME'
 alias dotfiles-lzg='lazygit --git-dir=$DOTFILES_DIR --work-tree=$HOME'
+alias dotfiles-claude='GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=$HOME claude'
 
 # === Completion System ===
 
