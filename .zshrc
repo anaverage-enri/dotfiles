@@ -87,6 +87,21 @@ export COLORTERM=truecolor                              # signals 24-bit color s
 # Sets up Ctrl-T (file picker), Ctrl-R (history), Alt-C (cd picker), and tab completion.
 source <(fzf --zsh)
 
+# Default search commands — fd is faster than find and respects .gitignore.
+# --strip-cwd-prefix removes the leading `./` from results.
+export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude .git --strip-cwd-prefix"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude .git --strip-cwd-prefix"
+
+# Make path completion (**<TAB>) use fd as well
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude .git . "$1"
+}
+
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude .git . "$1"
+}
+
 # --- Keybindings ---
 # After fzf so our bindings override any conflicting ones it sets up.
 
