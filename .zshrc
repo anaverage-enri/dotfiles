@@ -117,6 +117,23 @@ else
 fi
 '
 
+# Default opts. NOTE: fzf parses this as a command-line string, so:
+#   - outer "..." so $FZF_PREVIEW_COMMAND gets expanded here
+#   - inner '...' around any value with spaces (color, bind, preview)
+export FZF_DEFAULT_OPTS="
+  --layout=reverse
+  --border=rounded
+  --margin=1.5%
+  --height=80%
+  --input-border=rounded
+  --preview-border=rounded
+  --preview-window=right,60%
+  --ansi
+  --color='border:#5b595c,input-border:#caa6ff,preview-border:#78dce8,list-border:#ff6188'
+  --bind='ctrl-/:change-preview-window(hidden|)'
+  --preview='$FZF_PREVIEW_COMMAND'
+"
+
 # --- Keybindings ---
 # After fzf so our bindings override any conflicting ones it sets up.
 
