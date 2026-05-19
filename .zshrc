@@ -134,6 +134,12 @@ export FZF_DEFAULT_OPTS="
   --preview='$FZF_PREVIEW_COMMAND'
 "
 
+# Per-binding overrides — these merge with FZF_DEFAULT_OPTS.
+export FZF_CTRL_T_OPTS="--preview '$FZF_PREVIEW_COMMAND'"               # Ctrl-T: file picker preview
+export FZF_COMPLETION_PATH_OPTS="--preview '$FZF_PREVIEW_COMMAND'"      # **<TAB>: file completion
+export FZF_COMPLETION_DIR_OPTS="--preview 'eza --tree --level=2 --color=always --icons {}'"
+
+
 # --- Keybindings ---
 # After fzf so our bindings override any conflicting ones it sets up.
 
