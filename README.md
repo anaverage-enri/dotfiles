@@ -1,4 +1,35 @@
-# Bootstrapping A Brand New Machine With Conflict Handling
+# Dotfiles
+
+Personal dotfiles managed as a bare git repo with `$HOME` as the working tree.
+
+## Table of Contents
+
+- [Repository Structure](#repository-structure)
+- [Bootstrapping A New Machine](#bootstrapping-a-new-machine)
+- [Notes](#notes)
+
+---
+
+## Repository Structure
+
+```
+$HOME/
+├── .config/
+│   ├── ghostty/
+│   │   └── config.ghostty   # Ghostty terminal emulator config
+│   ├── nvim/
+│   │   └── init.lua         # Neovim config
+│   └── starship.toml        # Starship prompt config
+├── .gitconfig               # Git global config (aliases, defaults)
+├── .zshrc                   # Zsh shell config, aliases, env setup
+├── AGENTS.md                # Agent instructions for AI tools
+├── CLAUDE.md                # Claude Code project instructions
+└── README.md                # This file
+```
+
+---
+
+## Bootstrapping A New Machine
 
 A fresh machine already has `~/.zshrc` (possibly empty, possibly with some boilerplate), `~/.zprofile`, maybe `~/.gitconfig`.
 If you `git checkout` over the top, Git refuses with "the following untracked working tree files would be overwritten."
