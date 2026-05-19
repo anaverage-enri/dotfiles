@@ -102,6 +102,21 @@ _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude .git . "$1"
 }
 
+# Shared preview logic — referenced by multiple FZF_*_OPTS below.
+# Branches:
+#   - directories  → show 2-level tree (eza)
+#   - binary files → show metadata only (avoids garbage)
+#   - text files   → show first 100 lines with syntax highlighting (bat)
+export FZF_PREVIEW_COMMAND='
+if [ -d {} ]; then
+  eza --tree --level=2 --color=always --icons {};
+elif file --mime {} | grep -q binary; then
+  file {};
+else
+  bat -n --color=always --line-range :100 {};
+fi
+'
+
 # --- Keybindings ---
 # After fzf so our bindings override any conflicting ones it sets up.
 
