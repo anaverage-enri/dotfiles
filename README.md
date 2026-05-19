@@ -65,6 +65,7 @@ That `awk`/`xargs` dance parses Git's error output to find exactly the conflicti
 It's ugly but it's recommended by Atlassian and it works.
 
 ---
+
 ## Notes
 
 Inside Ghostty default configuration file, make sure to add
