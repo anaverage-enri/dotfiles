@@ -3,12 +3,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [user]
 	email = anaverage.enri@gmail.com
 	name = anaverage-enri
 
 [init]
-    defaultBranch = main
+	defaultBranch = main
 
 [fetch]
     prune = true
