@@ -140,6 +140,10 @@ export FZF_COMPLETION_PATH_OPTS="--preview '$FZF_PREVIEW_COMMAND'"      # **<TAB
 export FZF_COMPLETION_DIR_OPTS="--preview 'eza --tree --level=2 --color=always --icons {}'"
 
 
+# --- zoxide ---
+eval "$(zoxide init zsh)"
+
+
 # --- Keybindings ---
 # After fzf so our bindings override any conflicting ones it sets up.
 
