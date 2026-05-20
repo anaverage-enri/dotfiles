@@ -11,6 +11,10 @@
 [init]
 	defaultBranch = main
 
+[push]
+	autSetupRemote = true
+	default = current
+
 [fetch]
 	prune = true
 
