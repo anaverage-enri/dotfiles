@@ -12,4 +12,5 @@
 	defaultBranch = main
 
 [fetch]
-    prune = true
+	prune = true
+
