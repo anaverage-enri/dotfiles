@@ -20,3 +20,9 @@
 
 [merge]
 	conflictstyle = zdiff3
+
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	ci = commit
