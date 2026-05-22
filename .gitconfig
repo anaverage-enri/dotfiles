@@ -18,3 +18,5 @@
 [fetch]
 	prune = true
 
+[merge]
+	conflictstyle = zdiff3
