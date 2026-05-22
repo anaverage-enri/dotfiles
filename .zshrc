@@ -48,6 +48,9 @@ alias dotfiles='/usr/bin/git --git-dir=$DOTFILES_DIR --work-tree=$HOME'
 alias dotfiles-lzg='lazygit --git-dir=$DOTFILES_DIR --work-tree=$HOME'
 alias dotfiles-claude='GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=$HOME claude'
 
+# Git aliases for quality of life
+alias git-co='git checkout $(git branch | fzf --preview-window=hidden)'
+
 
 # --- Completion System ---
 
