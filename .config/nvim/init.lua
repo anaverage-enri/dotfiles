@@ -9,3 +9,5 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 -- ==========
 vim.opt.number = true -- line number
 vim.opt.relativenumber = true -- relative line number
+vim.opt.cursorline = true -- highlight the current line
+vim.opt.wrap = false -- do not wrap lines by default
