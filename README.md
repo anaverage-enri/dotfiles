@@ -18,7 +18,9 @@ $HOME/
 │   ├── ghostty/
 │   │   └── config.ghostty   # Ghostty terminal emulator config
 │   ├── nvim/
-│   │   └── init.lua         # Neovim config
+│   │   ├── init.lua         # Neovim entry: colorscheme + loads modules
+│   │   └── lua/
+│   │       └── options.lua  # Neovim editor options
 │   └── starship.toml        # Starship prompt config
 ├── .gitconfig               # Git global config (aliases, defaults)
 ├── .zshrc                   # Zsh shell config, aliases, env setup
