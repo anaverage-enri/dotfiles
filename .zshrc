@@ -139,6 +139,14 @@ export FZF_DEFAULT_OPTS="
 
 # Per-binding overrides — these merge with FZF_DEFAULT_OPTS.
 export FZF_CTRL_T_OPTS="--preview '$FZF_PREVIEW_COMMAND'"               # Ctrl-T: file picker preview
+
+# Ctrl-R: history entries aren't paths, so the inherited bat preview is useless, use custom `echo` for preview instead
+export FZF_CTRL_R_OPTS="
+  --preview 'echo {}'
+  --preview-window=up,3,wrap
+  --bind='ctrl-/:toggle-preview'
+"
+
 export FZF_COMPLETION_PATH_OPTS="--preview '$FZF_PREVIEW_COMMAND'"      # **<TAB>: file completion
 export FZF_COMPLETION_DIR_OPTS="--preview 'eza --tree --level=2 --color=always --icons {}'"
 
