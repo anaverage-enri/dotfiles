@@ -16,5 +16,6 @@ vim.opt.smartindent = true -- smart auto-indent
 vim.opt.autoindent = true -- copy indent from current line
 
 vim.opt.showmatch = true -- highlights matching brackets
+vim.opt.clipboard:append("unnamedplus")
 
 
