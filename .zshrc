@@ -37,6 +37,7 @@ alias vim='nvim'
 alias cat='bat --paging=never --style=plain'
 alias ls='eza --color=always --icons=always'
 alias tree-1='eza --color=always --icons=always --long --no-filesize --no-time --no-user --no-permissions --tree --level=1'
+alias tree-2='eza --color=always --icons=always --long --no-filesize --no-time --no-user --no-permissions --tree --level=2'
 alias lzg='lazygit'
 
 # Project shortcuts
